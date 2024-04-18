@@ -14,9 +14,7 @@ import javax.servlet.annotation.WebListener;
 @WebListener
 public class PropertiesListener implements ServletContextListener {
 
-
     public PropertiesListener() {
-        
     }
 
     /**
@@ -54,5 +52,4 @@ public class PropertiesListener implements ServletContextListener {
         }
     }
 
-	
 }
