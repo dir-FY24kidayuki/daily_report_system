@@ -22,7 +22,7 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <div class="header_menu">
+            <div id="header_menu">
                 <h1><a href="<c:url value='/?action=${actTop}&command=${commIdx}' />">日報管理システム</a></h1>&nbsp;&nbsp;&nbsp;
                 <c:if test="${sessionScope.login_employee != null}">
                     <c:if test="${sessionScope.login_employee.adminFlag == AttributeConst.ROLE_ADMIN.getIntegerValue()}">
@@ -32,7 +32,7 @@
                 </c:if>
             </div>
             <c:if test="${sessionScope.login_employee != null}">
-                <div class="employee_name">
+                <div id="employee_name">
                     <c:out value="${sessionScope.login_employee.name}" />
                     &nbsp;さん&nbsp;&nbsp;&nbsp;
                     <a href="<c:url value='?action=${actAuth}&command=${commOut}' />">ログアウト</a>
